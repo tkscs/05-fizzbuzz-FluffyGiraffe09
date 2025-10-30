@@ -1,22 +1,16 @@
 
-today = "Monday"
-# schoolday = today in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-schoolday = (
-    (today == "Monday") or
-    (today == "Tuesday") or
-    (today == "Wednesday") or
-    (today == "Thursday") or
-    (today == "Friday")
-)
+x = "I am divisible by 3 and 5!"
+y = "I am divisible by just 3!"
+z = "I am divisible by just 5!"
 
-if schoolday:
-    if today == "Friday":
-        print("We have Kab Shab today.")
-    elif today == "Monday":
-        print("We have Assembly today.")
-    elif today == "Wednesday":
-        print("We have Heart Work today.")
+max_number=100
+
+for i in range (1, max_number+1):
+    if i % 3 == 0 and i % 5 == 0:
+        print(x)
+    elif i % 3 == 0:
+        print(y)
+    elif i % 5 == 0:
+        print(z)
     else:
-        print("We have a short break today.")
-else:
-    print("Weekend!!")
+        print(i)
